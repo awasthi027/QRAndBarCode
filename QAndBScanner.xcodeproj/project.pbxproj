@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CBBFF296242DBF6800F276AE /* QAndBScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QAndBScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBFF296242DBF6800F276AE /* QABScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QABScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBFF299242DBF6800F276AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBBFF29D242DBF6800F276AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBBFF2A0242DBF6800F276AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		CBBFF297242DBF6800F276AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CBBFF296242DBF6800F276AE /* QAndBScanner.app */,
+				CBBFF296242DBF6800F276AE /* QABScanner.app */,
 				CBBFF2AC242DBF6900F276AE /* QAndBScannerTests.xctest */,
 				CBBFF2B7242DBF6900F276AE /* QAndBScannerUITests.xctest */,
 			);
@@ -181,7 +181,7 @@
 			);
 			name = QAndBScanner;
 			productName = QAndBScanner;
-			productReference = CBBFF296242DBF6800F276AE /* QAndBScanner.app */;
+			productReference = CBBFF296242DBF6800F276AE /* QABScanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CBBFF2AB242DBF6900F276AE /* QAndBScannerTests */ = {
@@ -483,7 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = come.harman.ignite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QABScanner;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -502,7 +502,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = come.harman.ignite;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = QABScanner;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

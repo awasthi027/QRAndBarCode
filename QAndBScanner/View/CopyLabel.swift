@@ -1,19 +1,17 @@
 //
 //  CopyLabel.swift
-//  QRScanner
+//  QAndBScanner
 //
-//  Created by KM, Abhilash a on 15/03/19.
+//  Created by Ashish Awasthi on 27/03/20.
 //  Copyright © 2019 KM, Abhilash. All rights reserved.
 //
 
 import UIKit
 
 class CopyLabel: UILabel {
-    
     override public var canBecomeFirstResponder: Bool {
         return true
     }
-    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupLabel()
@@ -30,7 +28,6 @@ class CopyLabel: UILabel {
             action: #selector(showMenu(sender:))
         ))
     }
-    
     override func copy(_ sender: Any?) {
         UIPasteboard.general.string = text
         UIMenuController.shared.setMenuVisible(false, animated: true)

@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     func displayScanResultMessage(message: String) {
-        let alertViewController = UIAlertController.init(title: "Scan Response", message: message, preferredStyle: .actionSheet)
+        let alertViewController = UIAlertController.init(title: "Scan Response", message: "Scanned Code is:- " + message, preferredStyle: .actionSheet)
         let navigate = UIAlertAction.init(title: "Details", style: .default) { (alert) in
             self.scannerView.stopScanning()
             if let item = DetailsViewController.detailsViewController() {
@@ -74,7 +74,7 @@ extension ViewController: QRAndBarCodeScannerViewDelegate {
         self.displayScanResultMessage(message: message)
     }
     func scannerView(_ view: QRAndBarCodeScannerView, didScanCodeSuccessfully scanCode: String) {
-        self.displayScanResultMessage(message: "Scanned Code is:- " + scanCode)
+        self.displayScanResultMessage(message: scanCode)
     }
     func scannerView(_ view: QRAndBarCodeScannerView, didStopScanning message: String) {
        // self.displayScanResultMessage(message: message)

@@ -1,16 +1,16 @@
 //
 //  QRData.swift
-//  QRScanner
+//  QAndBScanner
 //
-//  Created by KM, Abhilash a on 11/03/19.
+//  Created by Ashish Awasthi on 27/03/20.
 //  Copyright © 2019 KM, Abhilash. All rights reserved.
 //
 
 import Foundation
 
 struct QRData {
-    var codeString: String
+    var scannedStr: String
     init(with str: String) {
-        self.codeString = str
+        self.scannedStr = str
     }
 }

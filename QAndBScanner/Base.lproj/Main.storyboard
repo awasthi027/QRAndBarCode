@@ -11,12 +11,12 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QAndBScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QABScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-4x-kVE" customClass="QRAndBarCodeScannerView" customModule="QAndBScanner" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-4x-kVE" customClass="QRAndBarCodeScannerView" customModule="QABScanner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="414" height="400"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,12 +77,12 @@
         <!--Details View Controller-->
         <scene sceneID="pvk-jh-5X6">
             <objects>
-                <viewController storyboardIdentifier="DetailsViewController" id="LUB-Y2-ZL3" customClass="DetailsViewController" customModule="QAndBScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="LUB-Y2-ZL3" customClass="DetailsViewController" customModule="QABScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cu9-qY-6QI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-zz-8VJ" customClass="CopyLabel" customModule="QAndBScanner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-zz-8VJ" customClass="CopyLabel" customModule="QABScanner" customModuleProvider="target">
                                 <rect key="frame" x="10" y="54" width="394" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="500" constant="21" id="8jp-bq-Ezr"/>
@@ -91,12 +91,29 @@
                                 <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-rN-5mc">
+                                <rect key="frame" x="20" y="97" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7T9-6o-BKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                <state key="normal" title="Open Web URL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInWebAction:" destination="LUB-Y2-ZL3" eventType="touchUpInside" id="1YZ-Pv-k3m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="v0u-1E-9R5" firstAttribute="trailing" secondItem="Gom-rN-5mc" secondAttribute="trailing" constant="20" id="3t7-Z3-09Z"/>
                             <constraint firstItem="QEB-zz-8VJ" firstAttribute="leading" secondItem="v0u-1E-9R5" secondAttribute="leading" constant="10" id="C7A-X3-nu8"/>
                             <constraint firstItem="v0u-1E-9R5" firstAttribute="trailing" secondItem="QEB-zz-8VJ" secondAttribute="trailing" constant="10" id="kha-xG-31O"/>
+                            <constraint firstItem="Gom-rN-5mc" firstAttribute="leading" secondItem="v0u-1E-9R5" secondAttribute="leading" constant="20" id="nb3-wD-UL6"/>
                             <constraint firstItem="QEB-zz-8VJ" firstAttribute="top" secondItem="v0u-1E-9R5" secondAttribute="top" constant="10" id="tmS-AI-ZfM"/>
+                            <constraint firstItem="Gom-rN-5mc" firstAttribute="top" secondItem="QEB-zz-8VJ" secondAttribute="bottom" constant="20" id="udy-Po-tIH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v0u-1E-9R5"/>
                     </view>
